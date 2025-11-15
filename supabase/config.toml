@@ -1,1 +1,10 @@
 project_id = "amhneqlsgzcfhmrbkkae"
+
+[functions.pix-charge]
+verify_jwt = false
+
+[functions.pix-webhook]
+verify_jwt = false
+
+[functions.checkout-submit]
+verify_jwt = false
