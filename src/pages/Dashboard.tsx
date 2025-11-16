@@ -69,7 +69,9 @@ const Dashboard = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full">Ver Produtos</Button>
+              <Button className="w-full" onClick={() => navigate("/products")}>
+                Ver Produtos
+              </Button>
             </CardContent>
           </Card>
 
@@ -81,7 +83,9 @@ const Dashboard = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full">Ver Checkouts</Button>
+              <Button className="w-full" onClick={() => navigate("/checkouts")}>
+                Ver Checkouts
+              </Button>
             </CardContent>
           </Card>
 
@@ -93,7 +97,9 @@ const Dashboard = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full">Ver Vendas</Button>
+              <Button className="w-full" onClick={() => navigate("/sales")}>
+                Ver Vendas
+              </Button>
             </CardContent>
           </Card>
 
