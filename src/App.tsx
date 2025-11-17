@@ -13,6 +13,7 @@ import Checkout from "./pages/Checkout";
 import Upsell from "./pages/Upsell";
 import Downsell from "./pages/Downsell";
 import ThankYou from "./pages/ThankYou";
+import Presells from "./pages/Presells";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/products" element={<Products />} />
           <Route path="/checkouts" element={<Checkouts />} />
           <Route path="/sales" element={<Sales />} />
+          <Route path="/presells" element={<Presells />} />
           <Route path="/c/:slug" element={<Checkout />} />
           <Route path="/upsell" element={<Upsell />} />
           <Route path="/downsell" element={<Downsell />} />

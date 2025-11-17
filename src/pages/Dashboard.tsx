@@ -105,6 +105,20 @@ const Dashboard = () => {
 
           <Card>
             <CardHeader>
+              <CardTitle>Presells</CardTitle>
+              <CardDescription>
+                Configure páginas de presell com vídeo
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button className="w-full" onClick={() => navigate("/presells")}>
+                Ver Presells
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
               <CardTitle>Upsells</CardTitle>
               <CardDescription>
                 Configure ofertas pós-compra
