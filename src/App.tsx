@@ -8,6 +8,7 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
 import Checkouts from "./pages/Checkouts";
+import CheckoutEditor from "./pages/CheckoutEditor";
 import Sales from "./pages/Sales";
 import Checkout from "./pages/Checkout";
 import Upsell from "./pages/Upsell";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/products" element={<Products />} />
           <Route path="/checkouts" element={<Checkouts />} />
+          <Route path="/checkouts/:id/edit" element={<CheckoutEditor />} />
           <Route path="/sales" element={<Sales />} />
           <Route path="/presells" element={<Presells />} />
           <Route path="/c/:slug" element={<Checkout />} />
