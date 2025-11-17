@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import { toast } from "sonner";
-import { Plus, ArrowLeft, Pencil, Trash2, ExternalLink } from "lucide-react";
+import { Plus, ArrowLeft, Pencil, Trash2, ExternalLink, Settings } from "lucide-react";
 
 type Product = {
   id: string;
@@ -351,6 +351,13 @@ const Checkouts = () => {
                             onClick={() => window.open(`/c/${checkout.slug}`, "_blank")}
                           >
                             <ExternalLink className="h-4 w-4" />
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={() => navigate(`/checkouts/${checkout.id}/edit`)}
+                          >
+                            <Settings className="h-4 w-4" />
                           </Button>
                           <Button
                             variant="outline"
