@@ -1,22 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite",
-  "functions": {
-    "api/pix.ts": {
-      "runtime": "nodejs20.x",
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  },
-  "env": {
-    "VITE_SUPABASE_URL": "@VITE_SUPABASE_URL",
-    "SUPABASE_SERVICE_ROLE_KEY": "@SUPABASE_SERVICE_ROLE_KEY",
-    "EFI_CLIENT_ID": "@EFI_CLIENT_ID",
-    "EFI_CLIENT_SECRET": "@EFI_CLIENT_SECRET",
-    "EFI_PIX_KEY": "@EFI_PIX_KEY",
-    "EFI_CERT_PEM_BASE64": "@EFI_CERT_PEM_BASE64",
-    "EFI_KEY_PEM_BASE64": "@EFI_KEY_PEM_BASE64",
-    "EFI_ENV": "@EFI_ENV"
-  }
+  "framework": "vite"
 }
