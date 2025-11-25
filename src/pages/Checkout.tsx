@@ -389,16 +389,18 @@ const Checkout = () => {
 
   return (
     <>
-      <PixelTracker 
-        config={checkout.custom_fields || {}}
-        eventType="view_content"
-        eventData={{
-          content_name: checkout.product.name,
-          content_type: "product",
-          value: checkout.product.price,
-          currency: "BRL",
-        }}
-      />
+      {checkout?.product && (
+        <PixelTracker 
+          config={checkout.custom_fields || {}}
+          eventType="view_content"
+          eventData={{
+            content_name: checkout.product.name,
+            content_type: "product",
+            value: checkout.product.price,
+            currency: "BRL",
+          }}
+        />
+      )}
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-background">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
         {/* Header com Logo */}
