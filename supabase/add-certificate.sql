@@ -1,0 +1,54 @@
+-- Script para adicionar certificado Efí no Supabase
+-- Este é um placeholder - você precisa adicionar o certificado via Supabase Dashboard
+
+-- INSTRUÇÕES:
+-- 1. Vá em Supabase Dashboard
+-- 2. Selecione seu projeto
+-- 3. Vá em Settings → Secrets
+-- 4. Clique em "New Secret"
+-- 5. Adicione:
+
+-- Name: EFI_CERTIFICATE
+-- Value: [COLE_TODO_O_CONTEÚDO_DO_ARQUIVO_cert_base64_final.txt]
+
+-- Depois adicione também:
+
+-- Name: EFI_SANDBOX
+-- Value: false
+
+-- Name: TEST_MODE
+-- Value: false
+
+-- CERTIFICADO BASE64 (copie tudo abaixo):
+-----BEGIN CERTIFICATE-----
+MIIKXQIBAzCCCiMGCSqGSIb3DQEHAaCCChQEggoQMIIKDDCCBMMGCSqGSIb3DQEH
+AaCCBLQEggSwMIIErDCCBKgGCyqGSIb3DQEMCgEDoIIEcDCCBGwGCiqGSIb3DQEJ
+FgGgggRcBIIEWDCCBFQwggI8oAMCAQICEMr0sGwECjKHAR+qUzfGMK8wDQYJKoZI
+hvcNAQELBQAwga0xCzAJBgNVBAYTAkJSMRUwEwYDVQQIDAxNaW5hcyBHZXJhaXMx
+LDAqBgNVBAoMI0VmaSBTLkEuIC0gSW5zdGl0dXRpY2FvIGRlIFBhZ2FtZW50bzEX
+MBUGA1UECwwOSW5mcmFlc3RydXR1cmExGzAZBgNVBAMMEmFwaXMuZWZpcGF5LmNv
+bS5icjEjMCEGCSqGSIb3DQEJAQYUaW5mcmFAc2VqYWVmaS5jb20uYnIwHhcNMjUx
+MTE1MTc1NTExWhcNMjgxMTE1MTc1NTExWjAeMQ8wDQYDVQQDEwY4NTMzODExCzAJ
+BgNVBAYTAkJSMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnD9tWMTQ
+r1iyRyVJZFsxBgqliRbPak9FH+sAXL/JRTkGycSP8xKI89FKfh4zJjnAGAjoI09U
+xXvy6ZNVQ1bBfvt1/GYZzllEizo+S+1qKFvemcw8HLOn09i8L5uc/rFjTQif687K
+qWF2IM3Mo+dSgg7tRLdW+XU6AYbOVZAbc9pUwUcjrn4rrC8DmQ6AJ/f7FxqVDlJO
+GhilrKRowWC57azsr bGWzRRuRjgd/NdoLk13bhEGwK9rDRnsCVOGhuww7+MEa5IM
+F8qQi6Z+ejY2QwCapwQHzIqYcR0up/6aneciX9+6rmRsPEaEylr84lUbFTp1fQu1
+56CoTFXtJolCKQIDAQABMA0GCSqGSIb3DQEBCwUAA4ICAQCLyvGpmlu21b6iseKt
+43Hmrvhdhi FxkKNxKlFOR/KSNXuoyQB3C9Vd7Hw9MX6eabwFYV8RrMVSyMg3g+f
+uFqPiovbxsAHn633jMF0/qi9cm7GgLJdKul3WNOecRtV2hiLQ/frZVynSZjjNlfY
+oeSvBAGeFeukJFW9XP9drelzfvUBY3G9fGbDvJiJ9kJpa/3dsC8vj368XxH0ng9Y
+Pb42ijj29gtx7m8iIuQhJ4GIiBOcKybZNqDVUVGoHNc/ZW2ZP09qf/ZauIIbtqGA
+SIABJIUMtCa3tXo8mJvevyCC/EptwU0QJ1BldL6ip30EEvVNbD5T09dtLNUNlIuH
+pDtmhmUgSMFKghs3IBxELbBcuhM12KcW8nmkqBEvEBhBFjuVIILf6HU6FqrV8Gx/
+r+mGZcHrngZSYxIy8suPkGlASJgb/Uu/GCPTouRkxYWe+zHs/CjVydq32mkXofD6
+eIGTRfh0iI+No11BZrTomRCxEOlTHJzpeaRElSzHcCJc5zgRrIqHJ/MCIgMjzokx
+RMR6bO9gM9WYfWpqcjft6on9mwKdrfvi1B8doxTqYNrhcljU7Mu7Ub1ZuigM/TH+
+ExplgaRHz2i0wNcOPRKuXS4k0gYawriDF/ikyF+51rZziOQ0kkvLTupFu389bJnV
+E5058TnV+qTU2n93eo3aMiKY+TElMCMGCSqGSIb3DQEJFTEWBBTEUBpEGstXcVph
+YIqBJj+Ft3nQsTAxMCEwCQYFKwsDAgIFAAQUM3KSv19O274wwCVKgEBUiTJC4MUE
+CELTRrT7VmJrAgIIAA==
+-----END CERTIFICATE-----
+
+-- Depois de adicionar o certificado, o PIX real funcionará!

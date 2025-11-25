@@ -1,0 +1,163 @@
+================================================================================
+                    🚀 PRÓXIMOS PASSOS - PIX PAYMENT
+================================================================================
+
+Você está a 3 passos de ter PIX em produção!
+
+================================================================================
+PASSO 1: CRIAR TABELA NO SUPABASE (5 minutos)
+================================================================================
+
+1. Abra: https://app.supabase.com
+2. Selecione seu projeto
+3. Clique em "SQL Editor" (lado esquerdo)
+4. Clique em "New Query"
+5. Copie o conteúdo de:
+   → supabase/create-pix-payments-final.sql
+6. Cole no editor
+7. Clique em "Run"
+8. Aguarde mensagem: "Query executed successfully"
+
+✅ VERIFICAÇÃO:
+   - Vá em "Table Editor"
+   - Procure por "pix_payments"
+   - Deve aparecer na lista
+
+================================================================================
+PASSO 2: CONFIGURAR VARIÁVEIS NO VERCEL (5 minutos)
+================================================================================
+
+1. Abra: https://vercel.com/dashboard
+2. Clique no seu projeto
+3. Vá em "Settings" → "Environment Variables"
+4. Adicione estas 8 variáveis:
+
+   VITE_SUPABASE_URL
+   → https://seu-projeto.supabase.co
+
+   SUPABASE_SERVICE_ROLE_KEY
+   → seu-service-role-key-aqui
+
+   EFI_CLIENT_ID
+   → f898e2129e9ce4304b2d8d6e65c6d40da37daf3f
+
+   EFI_CLIENT_SECRET
+   → 8c8bd2f09fead413606c529f75719a950e894e5b
+
+   EFI_PIX_KEY
+   → 239d2d04-6f08-47a7-9f94-bdb6d12c7e1f
+
+   EFI_CERT_PEM_BASE64
+   → seu-certificado-em-base64
+
+   EFI_KEY_PEM_BASE64
+   → sua-chave-privada-em-base64
+
+   EFI_ENV
+   → production
+
+5. Clique em "Save"
+
+✅ VERIFICAÇÃO:
+   - Todas as 8 variáveis aparecem na lista
+
+================================================================================
+PASSO 3: FAZER DEPLOY (2 minutos)
+================================================================================
+
+1. Abra o terminal
+2. Execute:
+
+   npm install axios @supabase/supabase-js @vercel/node
+
+3. Depois:
+
+   vercel deploy --prod
+
+4. Aguarde o build terminar
+5. Copie a URL do deploy
+
+✅ VERIFICAÇÃO:
+   - Build completado com sucesso
+   - URL disponível (ex: https://seu-projeto.vercel.app)
+
+================================================================================
+PASSO 4: TESTAR (5 minutos)
+================================================================================
+
+LOCAL:
+   npm run dev
+   Acesse: http://localhost:5173/c/homologacao-pix
+   Preencha o formulário
+   Clique em "Gerar PIX"
+   Verifique se o QR Code aparece
+
+PRODUÇÃO:
+   Acesse: https://seu-projeto.vercel.app/c/homologacao-pix
+   Preencha o formulário
+   Clique em "Gerar PIX"
+   Verifique se o QR Code aparece
+
+✅ VERIFICAÇÃO:
+   - QR Code exibido
+   - Dados salvos no banco
+   - Sem erros no console
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+❌ Erro: "relation pix_payments does not exist"
+   → Execute o script SQL novamente
+   → Aguarde 10 segundos
+   → Refresh no Table Editor
+
+❌ Erro: "No token provided"
+   → Verifique se o usuário está autenticado
+   → Confirme o header Authorization
+
+❌ Erro: "Efí did not return loc id"
+   → Verifique credenciais Efí
+   → Teste em sandbox primeiro (EFI_ENV=sandbox)
+
+❌ Erro: "Invalid Supabase token"
+   → Verifique SUPABASE_SERVICE_ROLE_KEY
+   → Não use a chave anônima
+
+================================================================================
+DOCUMENTAÇÃO
+================================================================================
+
+Leia os arquivos para mais detalhes:
+
+   QUICK_START.md              → Guia rápido (3 passos)
+   SUPABASE_TABLE_SETUP.md     → Setup detalhado do banco
+   BACKEND_SETUP.md            → Configuração do backend
+   DEPLOYMENT_CHECKLIST.md     → Checklist completo
+   STATUS.md                   → Status do projeto
+
+================================================================================
+RESUMO
+================================================================================
+
+✅ Backend seguro com mTLS criado
+✅ Frontend atualizado para chamar API
+✅ Tabela do banco pronta para criar
+✅ Documentação completa
+
+⏳ Você precisa fazer:
+   1. Criar tabela no Supabase
+   2. Configurar variáveis no Vercel
+   3. Fazer deploy
+   4. Testar
+
+Tempo total: ~15 minutos
+
+================================================================================
+COMECE AGORA!
+================================================================================
+
+Leia: QUICK_START.md
+
+Boa sorte! 🚀
+================================================================================
